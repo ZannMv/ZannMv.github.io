@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beli Rank Crossplay SMP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZl8x5wVULOrIRX3GK9uNIGH2kWAHqjE9w_fjUystbhOU0SqerofwaS8xj&s=10');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .container {
+            max-width: 500px;
+            margin: 230px auto;
+            background-color: blue(255, 255, 255, 0.8); /* Warna latar belakang dengan opasitas */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+            font-family: 'Minecraft';
+            font-size: 36px;
+            text-shadow: 2px 2px 2px #000;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            color: black;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .form-input {
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Beli Rank Crossplay SMP</h1>
+        <form onsubmit="openWhatsApp();" target="_blank">
+            <div class="form-input">
+                <label for="nama">Nama:</label><br>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+            <div class="form-input">
+                <label for="rank">Rank yang ingin dibeli:</label><br>
+                <input type="text" id="rank" name="rank" required>
+            </div>
+            <div class="form-input">
+                <label for="pesan">Pesan Tambahan:</label><br>
+                <textarea id="pesan" name="text"></textarea>
+            </div>
+            <input type="submit" value="Beli Sekarang">
+        </form>
+    </div>
+
+    <script>
+        function openWhatsApp() {
+            var nama = document.getElementById('nama').value;
+            var rank = document.getElementById('rank').value;
+            var pesan = document.getElementById('pesan').value;
+
+            var nomorWhatsApp = '628123456789'; // Ganti dengan nomor WhatsApp Anda
+            var pesanWhatsApp = "Nama: " + nama + "\nRank yang dibeli: " + rank + "\nPesan tambahan: " + pesan;
+            var encodedMessage = encodeURIComponent(pesanWhatsApp);
+            var urlWhatsApp = "https://wa.me/" + nomorWhatsApp + "?text=" + encodedMessage;
+
+            window.open(urlWhatsApp, '_blank');
+            return false; // Untuk mencegah form submit
+        }
+    </script>
+</body>
+</html>
