@@ -2,9 +2,8 @@
 
 > Crossplay Smp is a website template created by a group of friends during the High Performance Codes course in college as a project. The goal was to create a responsive website for Minecraft servers with login without backend, without the use of frameworks, with a focus on speed and code cleanliness.
 
-> This website template is public and can be used by anyone who wants to create a website for a Minecraft server. Just modify some content to adapt it to your desired format. With Minecket, you are guaranteed to have a responsive website.
-
-> In summary, if you are looking for a fast and clean responsive website template for your Minecraft server, Minecket is an excellent choice. With an elegant and highly adaptable design, it is perfect for offering your users a high-quality experience.
+> This website template is public and can be used by anyone who wants to create a website for a Minecraft server. Just modify some of the content to adapt it to your format
+> In summary, if you are looking for a fast and clean responsive website template for your Minecraft server, Crossplay Smp is an excellent choice. With an elegant and highly adaptable design, it is perfect for offering your users a high-quality experience.
 
 ---
 
