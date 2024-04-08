@@ -1,0 +1,94 @@
+/* Checkout Page CSS with Animations and Effects */
+.checkout-title {
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease;
+}
+
+.checkout-form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slideInLeft 1s ease;
+}
+
+.checkout-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.checkout-form input[type="text"],
+.checkout-form input[type="email"],
+.checkout-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.checkout-form input[type="text"]:focus,
+.checkout-form input[type="email"]:focus,
+.checkout-form textarea:focus {
+    border-color: #4CAF50;
+}
+
+.checkout-form textarea {
+    height: 100px;
+}
+
+.checkout-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+    animation: fadeInUp 1s ease;
+}
+
+.checkout-form button:hover {
+    background-color: #45a049;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#rank {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
